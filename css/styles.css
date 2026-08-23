@@ -340,8 +340,8 @@ ol {
 }
 
 .brand__mark {
-  width: 2rem;
-  height: 2rem;
+  height: 2.25rem;
+  width: auto;
   flex-shrink: 0;
 }
 

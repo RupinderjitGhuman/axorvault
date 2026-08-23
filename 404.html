@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Axorvault Systems</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'self'; object-src 'none';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .not-found {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: var(--space-md);
+      padding: var(--space-md);
+      background:
+        radial-gradient(60rem 40rem at 80% -10%, rgba(47, 129, 247, 0.22), transparent 60%),
+        radial-gradient(50rem 35rem at -10% 110%, rgba(45, 212, 191, 0.14), transparent 55%),
+        var(--bg-dark);
+      color: var(--text-inverse);
+    }
+    .not-found__code {
+      font-size: var(--text-display);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(120deg, var(--azure-400), var(--teal-400));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .not-found__title {
+      font-size: var(--text-2xl);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .not-found__lede {
+      color: var(--slate-300);
+      max-width: 32rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="not-found">
+    <p class="not-found__code" aria-hidden="true">404</p>
+    <h1 class="not-found__title">This page went off the map.</h1>
+    <p class="not-found__lede">The page you&rsquo;re looking for doesn&rsquo;t exist or has moved. Let&rsquo;s get you back on solid ground.</p>
+    <a href="/" class="btn btn--primary btn--lg">Back to Home</a>
+  </main>
+</body>
+</html>
